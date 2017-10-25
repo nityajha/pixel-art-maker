@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    
+	<title>Pixel Art Maker!</title>
+    
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    
+	<link rel="stylesheet" href="style.css">
+
+	<script src = "script.js"></script>
+</head>
+
+<body>
+  
+	<h1>Lab: Pixel Art Maker</h1>
+
+
+	<div id = "palette">
+		<div class = "pen" style = "background-color: white;" onclick = "setPenColor('white')" ></div>
+		<div class = "pen" style = "background-color: #000000;" onclick = "setPenColor('#000000')"></div>
+		<div class = "pen" style = "background-color: #00FFFF;" onclick = "setPenColor('#00FFFF')"></div>
+		<div class = "pen" style = "background-color: #0000FF;" onclick = "setPenColor('#0000FF')"></div>
+		<div class = "pen" style = "background-color: #8A2BE2;" onclick = "setPenColor('#8A2BE2')"></div>
+		<div class = "pen" style = "background-color: #A52A2A;" onclick = "setPenColor('#A52A2A')"></div>
+		<div class = "pen" style = "background-color: #DEB887;" onclick = "setPenColor('#DEB887')"></div>
+		<div class = "pen" style = "background-color: #5F9EA0;" onclick = "setPenColor('#5F9EA0')"></div>
+		<div class = "pen" style = "background-color: #7FFF00;" onclick = "setPenColor('#7FFF00')"></div>
+		<div class = "pen" style = "background-color: #FF7F50;" onclick = "setPenColor('#FF7F50')"></div>
+		<div class = "pen" style = "background-color: #DC143C;" onclick = "setPenColor('#DC143C')"></div>
+		<div class = "pen" style = "background-color: #008B8B;" onclick = "setPenColor('#008B8B')"></div>
+		<div class = "pen" style = "background-color: #B8860B;" onclick = "setPenColor('#B8860B')"></div>
+		<div class = "pen" style = "background-color: #006400;" onclick = "setPenColor('#006400')"></div>
+		<div class = "pen" style = "background-color: #8B008B;" onclick = "setPenColor('#8B008B')"></div>
+		<div class = "pen" style = "background-color: #FF8C00;" onclick = "setPenColor('#FF8C00')"></div>
+		<div class = "pen" style = "background-color: #FF1493;" onclick = "setPenColor('#FF1493')"></div>
+		<div class = "pen" style = "background-color: #696969;" onclick = "setPenColor('#696969')"></div>
+		<div class = "pen" style = "background-color: #228B22;" onclick = "setPenColor('#228B22')"></div>
+		<div class = "pen" style = "background-color: #FF00FF;" onclick = "setPenColor('#FF00FF')"></div>
+		<div class = "pen" style = "background-color: #FFD700;" onclick = "setPenColor('#FFD700')"></div>
+		<div class = "pen" style = "background-color: #ADFF2F;" onclick = "setPenColor('#ADFF2F')"></div>
+		<div class = "pen" style = "background-color: #4B0082;" onclick = "setPenColor('#4B0082')"></div>
+		<div class = "pen" style = "background-color: #F0E68C;" onclick = "setPenColor('#F0E68C')"></div>
+		<div class = "pen" style = "background-color: #87CEFA;" onclick = "setPenColor('#87CEFA')"></div>
+		<div class = "pen" style = "background-color: #BA55D3;" onclick = "setPenColor('#BA55D3')"></div>
+		<div class = "pen" style = "background-color: #C71585;" onclick = "setPenColor('#C71585')"></div>
+		<div class = "pen" style = "background-color: #808000;" onclick = "setPenColor('#808000')"></div>
+	</div>  
+	<hr>
+	<br/>
+	<div id = "grid">
+		<p>Insert rows : <input type = "text" id = "rownum"  name = "rows">
+		Insert columns: <input type = "text" id = "colnum" name = "columns"></p>
+		<input type = "submit" value = "Create grid">
+	</div>
+	<hr>
+	<br/>
+	<div id = "art">
+		<div class = "row">
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+		</div>
+		<div class = "row">
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+		</div>
+		<div class = "row">
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+		</div>
+		<div class = "row">
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+		</div>
+	</div>
+	
+</body>
+
+</html>
