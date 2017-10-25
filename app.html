@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    
+	<title>Pixel Art Maker!</title>
+    
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    
+	<link rel="stylesheet" href="style.css">
+
+	<script src = "app.js"></script>
+</head>
+<body>
+  
+	<h1>Lab: Pixel Art Maker</h1>
+
+
+	<div id = "palette">
+		<div class = "pen" style = "background-color: white;" onclick = "setPenColor('white')" ></div>
+		<div class = "pen" style = "background-color: #000000;" onclick = "setPenColor('#000000')"></div>
+	</div>
+	<hr>
+	<br/>
+	<div id = "art">
+		<div class = "row">
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+		</div>
+		<div class = "row">
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+			<div class="pixel" onclick = "setPixelColor(this)"></div>
+		</div>
+	</div>
+	
+</body>
+
+</html>
