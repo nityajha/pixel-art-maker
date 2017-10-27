@@ -11,12 +11,13 @@ var j= document.getElementById("colnum").value;
 var routput = ' ';
 var coutput = ' ';
 
-for ( var a=4; a<i; a++){
+for ( var a=0; a<i; a++){
 	routput += '<div class = "row">';
 	document.getElementById('art').innerHTML = routput;
-	for (var b=4; b<j; b++){
+	for (var b=0; b<j; b++){
 		coutput += '<div class="pixel" onclick = "setPixelColor(this)"></div>';
 		document.getElementByClass('row').innerHTML = coutput;
 		
 	}
+	document.getElementById('art').innerHTML = </div>;
 }
