@@ -15,7 +15,7 @@ document.getElementById("1").click(function() {
     columns = document.getElementById('#input_width').value;
     makeGrid(rows, columns);
 });
-makeGrid(rows, columns){
+function makeGrid(rows, columns){
 	for ( var a=0; a<rows; a++){
 		row_output = '<div class = "row">';
 		document.getElementById('art').innerHTML = row_output;
