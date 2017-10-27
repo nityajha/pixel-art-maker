@@ -6,8 +6,8 @@ function setPixelColor(pixel){
 	pixel.style.backgroundColor = penColor;
 }
 
-var routput = ' ';
-var coutput = ' ';
+var row_output = ' ';
+var col_output = ' ';
 
 document.getElementById("1").click(function() {
     event.preventDefault();
@@ -17,11 +17,11 @@ document.getElementById("1").click(function() {
 });
 makeGrid(rows, columns){
 	for ( var a=0; a<rows; a++){
-		routput = '<div class = "row">';
-		document.getElementById('art').innerHTML = routput;
+		row_output = '<div class = "row">';
+		document.getElementById('art').innerHTML = row_output;
 		for (var b=0; b<columns; b++){
-			coutput = '<div class="pixel" onclick = "setPixelColor(this)"></div>';
-			document.getElementByClass('row').innerHTML = coutput;
+			col_output = '<div class="pixel" onclick = "setPixelColor(this)"></div>';
+			document.getElementByClass('row').innerHTML = col_output;
 		}
 		document.getElementById('art').innerHTML = '</div>';
 	}
