@@ -6,23 +6,28 @@ function setPixelColor(pixel){
 	pixel.style.backgroundColor = penColor;
 }
 
-var row_output = ' ';
-var col_output = ' ';
+var routput = ' ';
+var coutput = ' ';
 
-document.getElementById("1").click(function() {
+function inputs() {
     event.preventDefault();
-    rows = document.getElementById('#input_height').value;
-    columns = document.getElementById('#input_width').value;
+    var rows = document.getElementById("rownum").value;
+    var columns = document.getElementById("colnum").value;
     makeGrid(rows, columns);
-});
+}
+var grid = '';
 function makeGrid(rows, columns){
-	for ( var a=0; a<rows; a++){
-		row_output = '<div class = "row">';
-		document.getElementById('art').innerHTML = row_output;
-		for (var b=0; b<columns; b++){
-			col_output = '<div class="pixel" onclick = "setPixelColor(this)"></div>';
-			document.getElementByClass('row').innerHTML = col_output;
-		}
-		document.getElementById('art').innerHTML = '</div>';
-	}
-};
+    console.log(rows, columns);
+    for ( var a=0; a<rows; a++){
+        grid += '<div class = "row">';
+        //document.getElementById('art').innerHTML = row_output;
+        for (var b=0; b<columns; b++){
+            grid += '<div class="pixel" onclick = "setPixelColor(this)"></div>';
+            //document.getElementsByClassName('row').innerHTML = col_output;
+        }
+        //document.getElementById('art').innerHTML = '</div>';
+        grid += '</div>';
+        document.getElementById('art').innerHTML = grid;
+    }
+    grid = '';
+}

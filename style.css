@@ -13,15 +13,24 @@
 	background-color: #FFE4E1;
 }
 
+#intro{
+	font-size: 20px;
+}
+
 body{
 	text-align: center;
 	background-color: #B0E0E6;
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+	font-family: Monoton;
+	font-size: 70px;
+	margin: 0.2em;
+}
+
+h2{
+	font-family: Garamond;
+	font-size: 30px;
 }
 
 .row{

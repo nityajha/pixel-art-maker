@@ -18,6 +18,8 @@
 	<h1>Lab: Pixel Art Maker</h1>
 
 
+
+	<h2>Color Palette : Choose one color</h2>
 	<div id = "palette">
 		<div class = "pen" style = "background-color: white;" onclick = "setPenColor('white')" ></div>
 		<div class = "pen" style = "background-color: #000000;" onclick = "setPenColor('#000000')"></div>
@@ -47,13 +49,44 @@
 		<div class = "pen" style = "background-color: #BA55D3;" onclick = "setPenColor('#BA55D3')"></div>
 		<div class = "pen" style = "background-color: #C71585;" onclick = "setPenColor('#C71585')"></div>
 		<div class = "pen" style = "background-color: #808000;" onclick = "setPenColor('#808000')"></div>
+		<hr>
+		<div class = "pen" style = "background-color: #9ACD32;" onclick = "setPenColor('#9ACD32')" ></div>
+		<div class = "pen" style = "background-color: #FFFF00;" onclick = "setPenColor('#FFFF00')"></div>
+		<div class = "pen" style = "background-color: #F5F5F5;" onclick = "setPenColor('#F5F5F5')"></div>
+		<div class = "pen" style = "background-color: #F5DEB3;" onclick = "setPenColor('#0000FF')"></div>
+		<div class = "pen" style = "background-color: #EE82EE;" onclick = "setPenColor('#8A2BE2')"></div>
+		<div class = "pen" style = "background-color: #FF6347;" onclick = "setPenColor('#A52A2A')"></div>
+		<div class = "pen" style = "background-color: #D8BFD8;" onclick = "setPenColor('#DEB887')"></div>
+		<div class = "pen" style = "background-color: #008080;" onclick = "setPenColor('#5F9EA0')"></div>
+		<div class = "pen" style = "background-color: #D2B48C;" onclick = "setPenColor('#7FFF00')"></div>
+		<div class = "pen" style = "background-color: #FF0000;" onclick = "setPenColor('#FF7F50')"></div>
+		<div class = "pen" style = "background-color: #87CEEB;" onclick = "setPenColor('#DC143C')"></div>
+		<div class = "pen" style = "background-color: #C0C0C0;" onclick = "setPenColor('#008B8B')"></div>
+		<div class = "pen" style = "background-color: #2E8B57;" onclick = "setPenColor('#B8860B')"></div>
+		<div class = "pen" style = "background-color: #A0522D;" onclick = "setPenColor('#006400')"></div>
+		<div class = "pen" style = "background-color: #F4A460;" onclick = "setPenColor('#8B008B')"></div>
+		<div class = "pen" style = "background-color: #FA8072;" onclick = "setPenColor('#FF8C00')"></div>
+		<div class = "pen" style = "background-color: #8B4513;" onclick = "setPenColor('#FF1493')"></div>
+		<div class = "pen" style = "background-color: #4169E1;" onclick = "setPenColor('#696969')"></div>
+		<div class = "pen" style = "background-color: #BC8F8F;" onclick = "setPenColor('#228B22')"></div>
+		<div class = "pen" style = "background-color: #FFC0CB;" onclick = "setPenColor('#FF00FF')"></div>
+		<div class = "pen" style = "background-color: #FFDAB9;" onclick = "setPenColor('#FFD700')"></div>
+		<div class = "pen" style = "background-color: #D87093;" onclick = "setPenColor('#ADFF2F')"></div>
+		<div class = "pen" style = "background-color: #AFEEEE;" onclick = "setPenColor('#4B0082')"></div>
+		<div class = "pen" style = "background-color: #98FB98;" onclick = "setPenColor('#F0E68C')"></div>
+		<div class = "pen" style = "background-color: #EEE8AA;" onclick = "setPenColor('#87CEFA')"></div>
+		<div class = "pen" style = "background-color: #00FA9A;" onclick = "setPenColor('#BA55D3')"></div>
+		<div class = "pen" style = "background-color: #B0C4DA;" onclick = "setPenColor('#C71585')"></div>
+		<div class = "pen" style = "background-color: #FFA07A;" onclick = "setPenColor('#808000')"></div>
 	</div>  
 	<hr>
-	<br/>
+	<div id = "intro">
+		<p>Type the desired number of rows and columns you want in your Pixel Art Grid. Not interested to enter rows and columns... no problem... you can still enjoy coloring. Happy coloring!!! </p>
+	</div>
 	<div id = "grid">
-		<p>Insert rows : <input type = "text" id = "input_height"  name = "rows">
-		Insert columns: <input type = "text" id = "#input_width" name = "columns"></p>
-		<input type = "submit" id = "1" value = "Create grid">
+		<p>Insert rows : <input type = "text" id = "rownum"  name = "rows">
+		Insert columns: <input type = "text" id = "colnum" name = "columns"></p>
+		<input type = "submit" id = "1" value = "Create grid" onclick = "inputs()">
 	</div>
 	<hr>
 	<br/>
